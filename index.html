@@ -2,48 +2,73 @@
     <html>
         <head>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+            <link rel ='stylesheet' href = 'style.css'>
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-            <!--<script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script>-->
+            <script src = 'script.js'></script>
+            <script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script>
         </head>
         <body>
-            <div >
-                <input />
-                <button>Search</button>                
+          <div class="container">
+            <br />
+            
+            <!--Search Bar-->
+            
+            <div class = 'row'>
+              <div class='col-1'></div>
+              <div class = 'col-7'>
+                <div class="input-group mb-2">
+                  <input type="text" class="form-control">
+                  <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button">Button</button>
+                </div>
+              </div>    
             </div>
-        <div style = 'float:left; padding-left:50px; padding-top:20px'>
-        <iframe id='videoPlayer' width="860" height="515" src="https://www.youtube.com/embed/YoQ9OgWnrW4"></iframe>
-        </div>
-        <div style = 'float:left; padding-left: 30px; padding-top: 20px'>
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Anime Stuff</h5>
-            <a href="#" class="card-link">Another link</a>
+            </div>
+            
+            <!--Embeded Video Frame-->
+            
+            <div class = 'row'>
+              <div class = 'col-9'>
+                <iframe id='videoPlayer' width="800" height="450" src="https://www.youtube.com/embed/YoQ9OgWnrW4"></iframe>
+              </div>
+              
+              
+              <!--Thumbnails of returned videos-->
+              
+              <div class = 'col-3'>
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <p class="card-text"></p>
+                  </div>
+                  <img class="card-img-top" src="">
+                </div>
+                
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <p class="card-text"></p>
+                  </div>
+                  <img class="card-img-top" src="">
+                </div>
+                
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <p class="card-text"></p>
+                  </div>
+                  <img class="card-img-top" src="">
+                </div>
+                
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <p class="card-text"></p>
+                  </div>
+                  <img class="card-img-top" src="">
+                </div>
+                
+              </div>
+            </div>
           </div>
-          
-          <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">One Piece</h5>
-            <a href="#" class="card-link">Another link</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Sarcasem Video</h5>
-            <a href="#" class="card-link">Another link</a>
-            </div>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Sarcasem Video</h5>
-            <a href="#" class="card-link">Another link</a>
-            </div>
-            </div>
-        </div>
-        
-    </div>
         </body>
         <script src = "script.js"></script>
     </html>
