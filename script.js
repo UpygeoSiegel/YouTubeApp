@@ -3,14 +3,13 @@ function onClientLoad() {
 }
 
 function onYouTubeApiLoad() {
-    gapi.client.setApiKey('AIzaSyA0SK9csf6PTpkOYvxipgbK6EgMHxuIPIM');
+    gapi.client.setApiKey('YOUR_API_KEY_HERE');
 }
  
 function search() {
-    var quesry = document.getElementById('query').value
     var request = gapi.client.youtube.search.list({
         part: 'snippet',
-        q: query
+        q: 'ADD_QUERY_TERM_HERE'
     });
     request.execute(onSearchResponse);
 }
