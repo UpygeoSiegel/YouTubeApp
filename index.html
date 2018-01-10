@@ -7,7 +7,7 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
             <script src = 'script.js'></script>
-            <!--<script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script>-->
+            <script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script>
         </head>
         <body>
           <div class="container">
@@ -30,43 +30,52 @@
             <!--Embeded Video Frame-->
             
             <div class = 'row'>
-              <div class = 'col-9'>
-                <iframe id='videoPlayer' width="800" height="450" src="https://www.youtube.com/embed/YoQ9OgWnrW4"></iframe>
+              <div class = 'col-8'>
+                <div class ="embed-responsive embed-responsive-16by9">
+                <iframe class ="embed-responsive-item" id='videoPlayer' src="https://www.youtube.com/embed/YoQ9OgWnrW4"></iframe>
+               </div>
               </div>
               
               
               <!--Thumbnails of returned videos-->
               
-              <div class = 'col-3'>
-                <div class="card" style="width: 18rem;">
-                  <div class="card-body">
-                    <p class="card-text"></p>
+              <ul class = 'col-4 list-group'>
+                <li class = 'list-group-item'>
+                  <div class = 'video-list media'>
+                    <img class ='media-object' src = ''/>
                   </div>
-                  <img class="card-img-top" src="">
-                </div>
-                
-                <div class="card" style="width: 18rem;">
-                  <div class="card-body">
-                    <p class="card-text"></p>
+                  <div class = 'media-body'>
+                    <div class = 'media-heading'></div>
                   </div>
-                  <img class="card-img-top" src="">
-                </div>
+                </li>
                 
-                <div class="card" style="width: 18rem;">
-                  <div class="card-body">
-                    <p class="card-text"></p>
+                <li class = 'list-group-item'>
+                  <div class = 'video-list media'>
+                    <img class ='media-object' src = ''/>
                   </div>
-                  <img class="card-img-top" src="">
-                </div>
-                
-                <div class="card" style="width: 18rem;">
-                  <div class="card-body">
-                    <p class="card-text"></p>
+                  <div class = 'media-body'>
+                    <div class = 'media-heading'></div>
                   </div>
-                  <img class="card-img-top" src="">
-                </div>
+                </li>
                 
-              </div>
+                <li class = 'list-group-item'>
+                  <div class = 'video-list media'>
+                    <img class ='media-object' src = ''/>
+                  </div>
+                  <div class = 'media-body'>
+                    <div class = 'media-heading'></div>
+                  </div>
+                </li>
+                
+                <li class = 'list-group-item'>
+                  <div class = 'video-list media'>
+                    <img class ='media-object' src = ''/>
+                  </div>
+                  <div class = 'media-body'>
+                    <div class = 'media-heading'></div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </body>
